@@ -67,3 +67,17 @@ function openModal(imgElement) {
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
+
+// script.js
+const elements = document.querySelectorAll('.scroll-anim');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+
