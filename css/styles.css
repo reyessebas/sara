@@ -10938,7 +10938,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
