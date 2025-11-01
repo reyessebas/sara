@@ -52,3 +52,18 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+function openModal(imgElement) {
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const caption = document.getElementById("caption");
+
+  modal.style.display = "block";
+  modalImg.src = imgElement.src;
+  caption.innerHTML = imgElement.alt;
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
